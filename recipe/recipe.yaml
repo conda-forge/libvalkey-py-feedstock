@@ -13,7 +13,7 @@ source:
   sha256: "fe60ef535bc826fc35f4019228a0a46bdce8b41fd6013a7591e822a8a17c3170"
 
 build:
-  number: 1
+  number: 2
   script:
     content:
       - ${{ PYTHON }} -m pip install --use-pep517 --no-build-isolation .
