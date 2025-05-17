@@ -15,8 +15,11 @@ source:
 build:
   number: 2
   script:
+    env:
+      PIP_USE_PEP517: "1"
+      PIP_NO_BUILD_ISOLATION: "1"
     content:
-      - ${{ PYTHON }} -m pip install --use-pep517 --no-build-isolation .
+      - python -m pip install .
 
 requirements:
   build:
