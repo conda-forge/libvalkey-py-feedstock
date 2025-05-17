@@ -14,11 +14,6 @@ source:
 
 build:
   number: 2
-  script:
-    env:
-      PIP_USE_PEP517: "1"
-    content:
-      - python -m pip install --no-build-isolation .
 
 requirements:
   build:
