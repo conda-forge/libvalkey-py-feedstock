@@ -45,31 +45,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `libvalkey-py` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install libvalkey-py
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install libvalkey-py
 ```
 
-It is possible to list all of the versions of `libvalkey-py` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add libvalkey-py
+# for installing globally
+pixi global install libvalkey-py
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `libvalkey-py` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search libvalkey-py --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search libvalkey-py --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search libvalkey-py --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -81,6 +123,8 @@ mamba repoquery whoneeds libvalkey-py --channel conda-forge
 # List dependencies of `libvalkey-py`:
 mamba repoquery depends libvalkey-py --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
@@ -150,7 +194,4 @@ Feedstock Maintainers
 =====================
 
 * [@trim21](https://github.com/trim21/)
-
-
-<!-- dummy commit to enable rerendering -->
 
