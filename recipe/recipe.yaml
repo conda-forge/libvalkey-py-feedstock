@@ -13,7 +13,7 @@ source:
   sha256: "23486dccf6d33961e8d221d31b72d7d7311fc432a5cdecdea810af41d98fd3e2"
 
 build:
-  number: 0
+  number: 1
   script:
     env:
       PIP_USE_PEP517: "1"
